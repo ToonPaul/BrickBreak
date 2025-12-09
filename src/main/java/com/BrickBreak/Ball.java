@@ -31,14 +31,35 @@ public class Ball {
 		g.setColor(Color.cyan);
 		g.fillOval(x, y, size, size);
 	}
+	public void moveBall(){
+		x += changeX;
+		y += changeY;
+	}
+	public void reverseX(){
+		changeX *= -1;
+	}
+	public void reverseY(){
+		changeY *= -1;
+	}
 	public int getXpos(){
-		
+		return x;
 	}
 	public int getYpos(){
-
+		return y;
 	}
 	public int getSize(){
-
+		return size;
 	}
-	
+	public double getChangeX(){
+		return changeX;
+	}
+	public double getChangeY(){
+		return changeY;
+	}
+	public void setChangeX(){
+		this.changeX = changeX;
+	}
+	public void setChangeY(){
+		this.changeY = changeY;
+	}
 }
