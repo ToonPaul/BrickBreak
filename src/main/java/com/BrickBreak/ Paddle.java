@@ -38,20 +38,26 @@ public class Paddle {
 	public int getY(){
 		return y;
 	}
+	public int setX(int x){
+		this.x = x;
+	}
 	public int getWidth(){
-		
+		return width;
 	}
 	public int getHeight(){
-		
+		return height;
 	}
 	public int getVelocity(){
-
+		return speed;
 	}
 	public void move(){
 
 	}
-	public void addVelocity(){
-
+	public void addVelocity(int num){
+		speed += num;
+	}
+	public void setVelocity(int speed){
+		this.speed = speed;
 	}
 
 }
