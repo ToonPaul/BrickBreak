@@ -28,17 +28,30 @@ public class Paddle {
 	}
 
 	//methods:
+	public void draw(Graphic g){
+		g.setColor(Color.lightGray);
+		g.fillRect(x, y, width, height);
+	}
 	public int getX(){
-
+		return x;
 	}
 	public int getY(){
-
+		return y;
 	}
 	public int getWidth(){
-
+		
 	}
 	public int getHeight(){
 		
 	}
-	
+	public int getVelocity(){
+
+	}
+	public void move(){
+
+	}
+	public void addVelocity(){
+
+	}
+
 }

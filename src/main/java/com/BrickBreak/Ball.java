@@ -35,6 +35,12 @@ public class Ball {
 		x += changeX;
 		y += changeY;
 	}
+	public void setX(){
+		this.x = x;
+	}
+	public void setY(){
+		this.y = y;
+	}
 	public void reverseX(){
 		changeX *= -1;
 	}
@@ -61,5 +67,11 @@ public class Ball {
 	}
 	public void setChangeY(){
 		this.changeY = changeY;
+	}
+	public void setXVelocity(){
+		
+	}
+	public void setYVelocity(){
+
 	}
 }
