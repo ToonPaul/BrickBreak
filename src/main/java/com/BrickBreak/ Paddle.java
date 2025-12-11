@@ -28,7 +28,7 @@ public class Paddle {
 	}
 
 	//methods:
-	public void draw(Graphic g){
+	public void draw(Graphics g){
 		g.setColor(Color.lightGray);
 		g.fillRect(x, y, width, height);
 	}
