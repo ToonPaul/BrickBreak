@@ -14,15 +14,11 @@ public class Ball {
 	private double changeX;
 	private double changeY;
 	private int size;
-	private Color color;
 	
 	//constructor(s):
-	public Ball (int x, int y, int changeX, int changeY, Color color, int size){
+	public Ball (int x, int y, int size){
 		this.x = x;
 		this.y = y;
-		this.changeX = changeX;
-		this.changeY = changeY;
-		this.color = color;
 		this.size = size;
 	}
 
@@ -31,7 +27,7 @@ public class Ball {
 		g.setColor(Color.cyan);
 		g.fillOval(x, y, size, size);
 	}
-	public void moveBall(){
+	public void move(){
 		x += changeX;
 		y += changeY;
 	}

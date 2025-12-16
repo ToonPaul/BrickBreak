@@ -2,6 +2,7 @@ package com.BrickBreak;
 
 import java.awt.Graphics;
 import java.awt.*;
+import java.util.Scanner;
 
 public class Paddle {
 
@@ -19,12 +20,11 @@ public class Paddle {
 	private Color color;
 	
 	//constructor(s):
-	public Paddle(int x, int y, int width, int speed, Color color){
+	public Paddle(int x, int y, int width, int speed){
 		this.x = x;
 		this.y = y;
 		this.width = width;
 		this.speed = speed;
-		this.color = color;
 	}
 
 	//methods:
@@ -50,8 +50,12 @@ public class Paddle {
 	public int getVelocity(){
 		return speed;
 	}
-	public void move(){
+	public void move(KeyEvent e){
+		if(e.getKeyCode == KeyEvent.VK_LEFT){
 
+		}
+		
+		
 	}
 	public void addVelocity(int num){
 		speed += num;
