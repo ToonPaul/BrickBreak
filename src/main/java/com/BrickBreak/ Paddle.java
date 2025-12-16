@@ -50,12 +50,8 @@ public class Paddle {
 	public int getVelocity(){
 		return speed;
 	}
-	public void move(KeyEvent e){
-		if(e.getKeyCode == KeyEvent.VK_LEFT){
-
-		}
-		
-		
+	public void move(){
+		addVelocity(6);
 	}
 	public void addVelocity(int num){
 		speed += num;
