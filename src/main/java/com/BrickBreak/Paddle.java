@@ -25,7 +25,7 @@ public class Paddle {
 		this.y = y;
 		this.width = width;
 		this.height = height;
-		this.speed = 6;
+		this.speed = 2;
 	}
 
 	//methods:

@@ -20,6 +20,8 @@ public class Ball {
 		this.x = x;
 		this.y = y;
 		this.size = size;
+		this.changeX = 3;
+		this.changeY = -1;
 	}
 
 	//methods:
