@@ -14,17 +14,18 @@ public class Paddle {
 	//don't forget you need instance variables:
 	private int x;
 	private int y;
-	private int height = 15;
+	private int height;
 	private int speed;
 	private int width;
 	private Color color;
 	
 	//constructor(s):
-	public Paddle(int x, int y, int width, int speed){
+	public Paddle(int x, int y, int width, int height){
 		this.x = x;
 		this.y = y;
 		this.width = width;
-		this.speed = speed;
+		this.height = height;
+		this.speed = 6;
 	}
 
 	//methods:
@@ -51,7 +52,7 @@ public class Paddle {
 		return speed;
 	}
 	public void move(){
-		addVelocity(6);
+		x+=speed;
 	}
 	public void addVelocity(int num){
 		speed += num;
